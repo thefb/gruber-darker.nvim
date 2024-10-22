@@ -4,7 +4,7 @@ local M = {}
 ---@type table<string, Color>
 M = {
     none = Color.none(),
-    fg = Color.new(0xe4e4e4), -- Keeping original foreground
+    fg = Color.new(0x000000), -- Keeping original foreground
     ["fg+1"] = Color.new(0xf4f4ff),
     ["fg+2"] = Color.new(0xf5f5f5),
     white = Color.new(0xffffff),
@@ -18,7 +18,7 @@ M = {
     ["red-1"] = Color.new(0x4a90e2), -- Light blue instead of red
     red = Color.new(0x5fa8e5),      -- Brighter blue for red
     ["red+1"] = Color.new(0x87c5f0), -- Even lighter blue
-    green = Color.new(0xff00ff),   -- Light yellow for green
+    green = Color.new(0x2986cc),   -- Light yellow for green
     yellow = Color.new(0xffcc00),  -- Bright yellow
     brown = Color.new(0x3d3d3d),   -- Darker tone for brown
     quartz = Color.new(0xb0b0b0),  -- Light gray for quartz
