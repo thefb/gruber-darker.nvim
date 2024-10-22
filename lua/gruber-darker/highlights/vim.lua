@@ -22,11 +22,11 @@ M.highlights.color_column = Highlight.new("ColorColumn", { bg = c["bg+2"] })
 ---Placeholder characters substituted for concealed text (see 'conceallevel')
 M.highlights.conceal = Highlight.new("Conceal", { fg = c.fg, bg = c.bg })
 ---Character under the cursor
-M.highlights.cursor = Highlight.new("Cursor", { bg = c.yellow })
+M.highlights.cursor = Highlight.new("Cursor", { fg = c.black, bg = c.white })
 ---The character under the cursor when |language-mapping| is used (see 'guicursor')
-M.highlights.l_cursor = Highlight.new("lCursor", { fg = c.none, bg = c.yellow })
+M.highlights.l_cursor = Highlight.new("lCursor", { fg = c.none, bg = c.white })
 ---Like Cursor, but used when in IME mode |CursorIM|
-M.highlights.cursor_im = Highlight.new("CursorIM", { fg = c.none, bg = c.yellow })
+M.highlights.cursor_im = Highlight.new("CursorIM", { fg = c.none, bg = c.white })
 ---Screen-column at the cursor, when 'cursorcolumn' is set.
 M.highlights.cursor_column = Highlight.new("CursorColumn", { bg = c["bg+2"] })
 ---Screen-line at the cursor, when 'cursorline' is set.  Low-priority if foreground (ctermfg OR guifg) is not set.
@@ -73,7 +73,7 @@ M.highlights.line_number = Highlight.new("LineNr", { fg = c["bg+4"] })
 ---Like LineNr when 'cursorline' or 'relativenumber' is set for the cursor line.
 M.highlights.cursor_line_number = Highlight.new("CursorLineNr", { fg = c.yellow })
 ---The character under the cursor or just before it, if it is a paired bracket, and its match. |pi_paren.txt|
-M.highlights.match_paren = Highlight.new("MatchParen", { fg = c.fg, bg = c.wisteria })
+M.highlights.match_paren = Highlight.new("MatchParen", { fg = c.black, bg = c.yellow })
 ---'showmode' message (e.g., "---INSERT ---")
 M.highlights.mode_msg = Highlight.new("ModeMsg", { link = gruber_hl.fg2 })
 ---Area for messages and cmdline
