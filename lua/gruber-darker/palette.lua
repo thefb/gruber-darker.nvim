@@ -3,11 +3,6 @@ local M = {}
 
 ---@type table<string, Color>
 M = {
-local Color = require("gruber-darker.color")
-local M = {}
-
----@type table<string, Color>
-M = {
     none = Color.none(),
     fg = Color.new(0xe4e4e4), -- Keeping original foreground
     ["fg+1"] = Color.new(0xf4f4ff),
@@ -31,10 +26,6 @@ M = {
     ["niagara-1"] = Color.new(0x565f73), 
     niagara = Color.new(0x96a6c8), 
     wisteria = Color.new(0xffd700), -- Gold-like color
-}
-
-return M
-
 }
 
 return M
