@@ -138,9 +138,9 @@ M.highlights.storage_class = Highlight.new("@storageclass", { link = vim_hl.stor
 -- I don't think this is supported anymore...
 -- M.highlights.attribute = Highlight.new("@attribute", { link = gruber_hl.brown })
 ---object and struct fields
-M.highlights.field = Highlight.new("@field", { link = gruber_hl.blue1 })
+M.highlights.field = Highlight.new("@field", { link = gruber_hl.red })
 ---similar to `@field`
-M.highlights.property = Highlight.new("@property", { link = gruber_hl.yellow1 })
+M.highlights.property = Highlight.new("@property", { link = gruber_hl.green })
 
 -- Identifiers
 
